@@ -4,7 +4,7 @@ import userService from '@services/users.service';
 class UsersController {
   public userService = new userService();
 
-  public getUserByAddress = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  public findUserByAddress = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const userAddress = String(req.params.address);
       const findOneUserData: User = await this.userService.findUserByAddress(userAddress);

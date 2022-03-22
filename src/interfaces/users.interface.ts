@@ -4,5 +4,4 @@ export interface User {
   canRejoin: boolean;
   mostRecentSegmentPaid: number;
   amountPaid: number;
-  info: any;
 }

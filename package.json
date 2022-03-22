@@ -1,9 +1,9 @@
 {
   "name": "gg-backend-challenge",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "TypeScript + Express API Server",
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Tsang",
+  "private": true,
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "dev": "cross-env NODE_ENV=development nodemon",

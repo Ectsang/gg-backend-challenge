@@ -1,0 +1,7 @@
+# baseURL
+@baseURL = http://localhost:3000
+
+###
+# Find Current Game Segment
+GET {{ baseURL }}/game/currentSegment
+

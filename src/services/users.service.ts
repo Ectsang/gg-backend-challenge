@@ -3,10 +3,10 @@ import { User } from '@interfaces/users.interface';
 import userModel from '@models/users.model';
 
 import { contracts, wallets } from '@/utils/constants';
-import abi from '@/abi/ABI-GoodGhostingWhitelisted';
+const abi = require('@/abi/ABI-GoodGhostingWhitelisted.json');
 
 import { Contract } from 'ethers';
-import { connect } from '../utils/provider';
+import { connect } from '@/utils/provider';
 const provider = connect();
 
 const GoodGhostingDemo = new Contract(contracts.goodghosting, abi, provider);
@@ -17,7 +17,7 @@ class UserService {
   public users = userModel;
 
   public async findUserByAddress(address: string): Promise<User> {
-    console.log('finding player with address:', address);
+    // console.log('finding player with address:', address);
     try {
       const players = await GoodGhostingDemo.players(address);
 
@@ -27,7 +27,6 @@ class UserService {
         canRejoin: players.canRejoin,
         mostRecentSegmentPaid: players.mostRecentSegmentPaid,
         amountPaid: players.amountPaid,
-        info: '',
       };
 
       if (findUser.addr === wallets.zero) throw new HttpException(404, 'Player Not Found');
