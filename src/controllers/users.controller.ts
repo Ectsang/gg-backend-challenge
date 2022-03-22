@@ -9,7 +9,7 @@ class UsersController {
       const userAddress = String(req.params.address);
       const findOneUserData: User = await this.userService.findUserByAddress(userAddress);
 
-      res.status(200).json({ data: findOneUserData, message: 'findOne' });
+      res.status(200).json({ data: findOneUserData, message: 'success' });
     } catch (error) {
       next(error);
     }

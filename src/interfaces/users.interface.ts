@@ -1,4 +1,8 @@
 export interface User {
-  id: number;
-  address: string;
+  addr: string;
+  withdrawn: boolean;
+  canRejoin: boolean;
+  mostRecentSegmentPaid: number;
+  amountPaid: number;
+  info: any;
 }

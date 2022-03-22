@@ -34,6 +34,6 @@
       "@utils/*": ["utils/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+  "include": ["src/**/*.ts", "src/**/*.json", ".env", "src/abi/ABI-aave-lending-pool-provider.js", "src/abi/ABI-GoodGhostingWhitelisted.js", "src/abi/ABI-incentives-controller.js"],
   "exclude": ["node_modules", "src/http", "src/logs", "src/tests"]
 }

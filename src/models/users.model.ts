@@ -2,10 +2,8 @@ import { User } from '@interfaces/users.interface';
 
 // password: password
 const userModel: User[] = [
-  { id: 1, address: '0x1' },
-  { id: 2, address: '0x2' },
-  { id: 3, address: '0x3' },
-  { id: 4, address: '0x4' },
+  { addr: '0x1', withdrawn: false, canRejoin: false, mostRecentSegmentPaid: 0, amountPaid: 1000000000000000000, info: '' },
+  { addr: '0x2', withdrawn: false, canRejoin: false, mostRecentSegmentPaid: 0, amountPaid: 1000000000, info: '' },
 ];
 
 export default userModel;
