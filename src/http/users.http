@@ -3,4 +3,11 @@
 
 ###
 # Find User By Address
-GET {{ baseURL }}/users/address
+# player address: 0xc480abab3b49b5905ba6325412cb752fbec8b06d
+GET {{ baseURL }}/users/address/0xc480abab3b49b5905ba6325412cb752fbec8b06d
+
+
+###
+# Find User By Address
+# non player address: 0x5360Be190f26daD6302207B805f15720A1bC804d
+GET {{ baseURL }}/users/address/0x5360Be190f26daD6302207B805f15720A1bC804d
