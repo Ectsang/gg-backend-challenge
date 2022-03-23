@@ -9,6 +9,8 @@ const provider = connect();
 
 const GoodGhostingDemo = new Contract(contracts.goodghosting, abi, provider);
 /**
+ * Code snippet from https://kovan.etherscan.io/address/0xc69a569405EAE312Ca13C2eD85a256FbE4992A35#code
+ *
   /// @notice Calculates the current segment of the game.
   /// @return current game segment
   function getCurrentSegment() public view returns (uint256) {
